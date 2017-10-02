@@ -14,6 +14,12 @@ class CBlockHeader;
 class CBlockIndex;
 class uint256;
 
+enum DiffMode {
+    DIFF_DEFAULT = 0, // Default to invalid 0
+    DIFF_BTC     = 1, // Retarget every x blocks (Bitcoin style)
+    DIFF_DGW     = 2, // Retarget using Dark Gravity Wave v3
+};
+
 unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHeader *pblock, const Consensus::Params&);
 unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nFirstBlockTime, const Consensus::Params&);
 
