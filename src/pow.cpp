@@ -23,7 +23,7 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
     // Only change once per difficulty adjustment interval
     int difficultyAdjustmentInterval = params.DifficultyAdjustmentInterval();
 
-    if (pindexLast->nHeight + 1 >= 98848) {
+    if (pindexLast->nHeight + 1 >= 99111) {
 	    difficultyAdjustmentInterval = 1;
     }
 
@@ -131,7 +131,7 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
         return pindexLast->nBits;
 
     unsigned int retarget = DIFF_DGW;
-    if (pindexLast->nHeight + 1 >= 98848) retarget = DIFF_DGW;
+    if (pindexLast->nHeight + 1 >= 99111) retarget = DIFF_DGW;
     else retarget = DIFF_BTC;
    
 
