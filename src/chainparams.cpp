@@ -138,16 +138,16 @@ public:
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = false;
-/*
+
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-			(  0, uint256S("0xcefd1d01e4467928bfb21802bf5f95520ca36969d32ae680e13ff05aa33b11d7")),
-			1498592198, // * UNIX timestamp of last checkpoint block
-			0,   // * total number of transactions between genesis and last checkpoint
+			( 96922 , uint256S("0x02c2611ca3780563f7ffafbd5ca09f84d834fa12dce8a2cc3533072b97f58747")),
+			1506670959, // * UNIX timestamp of last checkpoint block
+			117540,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
-			5500.0     // * estimated number of transactions per day after checkpoint
+			5000.0     // * estimated number of transactions per day after checkpoint
 	};
-*/
+
 
     }
 };
