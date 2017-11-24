@@ -1742,7 +1742,7 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
     if (halvings >= 64)
         return 0;
 
-    if (nHeight >= 207180) {
+    if (nHeight >= 166954) {
     	return 0;
     }
 
